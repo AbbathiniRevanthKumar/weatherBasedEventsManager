@@ -194,7 +194,7 @@ function setUpItems() {
 const back = document.querySelector(".back");
 
 back.addEventListener("click", () => {
-  window.location.href = "./index.html";
+  window.location.href ="https://revanthkumar-github.github.io/weatherBasedEventsManager/";
 });
 
 function getGeoLocation() {
