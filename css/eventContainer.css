@@ -1,0 +1,157 @@
+.eventcontainer {
+  visibility: hidden;
+  background-color: rgba(17, 27, 41, 0.836);
+  padding: 15px 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: max-content;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.emptyContainer {
+  visibility: visible;
+  background-color: rgba(17, 27, 41, 0.836);
+  padding: 15px 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: max-content;
+  width: 40vw;
+}
+
+.emptyContainer .desc {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 2em;
+  color: white;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+}
+
+.showContainer {
+  visibility: visible;
+}
+
+.eventcontainer .title {
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: 400;
+  color: white;
+  letter-spacing: 2px;
+  margin: 10px 0px;
+}
+.eventitems {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.eventitems .item {
+  display: flex;
+  padding: 10px 20px;
+  gap: 20px;
+  align-items: center;
+  background-color: rgb(10, 13, 19);
+  border-radius: 20px;
+  color: rgba(255, 255, 255, 0.856);
+  justify-content: space-around;
+}
+
+.item .i {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  width: 100%;
+  text-align: center;
+  text-transform: capitalize;
+  height: max-content;
+  width: 120px;
+  overflow-wrap: break-word;
+}
+
+.btn-container .edit-btn {
+  border: none;
+  background-color: transparent;
+  color: rgba(109, 255, 41, 0.89);
+  font-size: 1em;
+  cursor: pointer;
+}
+.btn-container .delete-btn {
+  border: none;
+  background-color: transparent;
+  color: rgba(255, 37, 37, 0.842);
+  font-size: 1em;
+  cursor: pointer;
+}
+
+img {
+  height: 60px;
+}
+
+.i h4 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 600px) {
+  .eventcontainer {
+    width: 80vw;
+  }
+
+  .emptyContainer {
+    padding: 10px 15px;
+    width: 80vw;
+  }
+  .eventcontainer .title {
+    font-size: 2em;
+    margin: 5px 0px;
+  }
+  .eventitems {
+    gap: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .eventitems .item {
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-around;
+    width: 50vw;
+  }
+
+  .item .i {
+    overflow-wrap: break-word;
+    font-size: 1.2em;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn-container 
+  {
+    display: flex;
+    gap:30px;
+  }
+  .btn-container .edit-btn {
+    font-size: 1.5em;
+  }
+  .btn-container .delete-btn {
+    font-size: 1.5em;
+  }
+
+  img {
+    height: 60px;
+    padding: 0px 10px;
+  }
+
+  .i h4 {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 700;
+  }
+}

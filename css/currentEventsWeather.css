@@ -1,0 +1,69 @@
+.currentWeather {
+  border-radius: 20px;
+  height: max-content;
+  padding: 20px 20px;
+  display: flex;
+  align-items: center;
+  max-width: 30vw;
+  color: white;
+}
+
+.details .name {
+  font-size: 2.3em;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-family: "Play", sans-serif;
+  letter-spacing: 2px;
+}
+
+.details .currenttemp {
+  font-size: 2.8em;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  padding: 10px 0px;
+}
+
+.currentWeather .icon {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  margin: 0px 10px;
+}
+
+.back {
+  background-color: white;
+  width: max-content;
+  padding: 3px 10px;
+  font-size: 1em;
+  color: black;
+  border-radius: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: "Quicksand", sans-serif;
+}
+
+.back i {
+  margin-right: 10px;
+  color: rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 600px) {
+  .currentWeather {
+    border-radius: 20px;
+    max-width: 100%;
+  }
+
+  .details .name {
+    font-size: 1.8em;
+  }
+
+  .details .currenttemp {
+    font-size: 2.5em;
+  }
+
+  .currentWeather .icon {
+    height: 120px;
+    width: 120px;
+  }
+
+}

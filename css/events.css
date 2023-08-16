@@ -1,0 +1,50 @@
+.EventsSection {
+  width: 30vw;
+  color: #b4b2b2;
+  padding: 20px 0px;
+}
+
+.EventsSection .events {
+  border-radius: 20px;
+  padding: 20px 15px;
+  background-color: rgba(17, 27, 41, 0.836);
+}
+.events .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.events .title h3 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  letter-spacing: 1.5px;
+}
+
+.title i {
+  /* background-color: red; */
+  padding: 5px;
+  border: 2px solid #b4b2b2;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.title i:hover {
+  color: rgb(243, 241, 241);
+  border-color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 600px) {
+  .EventsSection {
+    width: 100%;
+    padding: 20px 15px;
+  }
+
+  .EventsSection .events {
+    padding: 20px 20px;
+    background-color: rgba(17, 27, 41, 0.836);
+    width: 80vw;
+  }
+
+}

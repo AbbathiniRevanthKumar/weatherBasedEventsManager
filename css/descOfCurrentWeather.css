@@ -1,0 +1,88 @@
+.descofweather {
+  background-color: rgba(17, 27, 41, 0.836);
+  width: 60vw;
+  padding: 20px 15px;
+  border-radius: 20px;
+  margin: 10px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.descofweather .details {
+  display: flex;
+  justify-content: space-around;
+}
+
+.descofweather .sun {
+  background-color: rgba(12, 41, 66, 0.466);
+  border-radius: 20px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.descofweather .sun .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.descofweather h2 {
+  font-size: 1.2em;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-family: "Play", sans-serif;
+  display: flex;
+  flex-direction: column;
+  color: rgba(178, 204, 226, 0.712);
+}
+
+.descofweather .icon {
+  height: 40px;
+  width: 40px;
+}
+
+.descofweather span {
+  font-size: 1.2em;
+  color: rgba(255, 255, 255, 0.808);
+  font-weight: 400;
+}
+
+@media screen and (max-width: 600px) {
+  .descofweather {
+    width: 80vw;
+    padding: 10px 15px;
+    margin: 10px 0px;
+    gap: 10px;
+  }
+
+  .descofweather .sun {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .descofweather .sun .item {
+    display: flex;
+    gap: 5px;
+    margin:0px 6px 0px 0px ;
+  }
+
+  .descofweather h2 {
+    font-size: 0.73em;
+    font-weight: 400;
+  }
+
+  .descofweather .icon {
+    height: 30px;
+    width: 30px;
+  }
+
+  .descofweather span {
+    font-size: 0.8em;
+    color: rgba(255, 255, 255, 0.808);
+    font-weight: 400;
+  }
+}

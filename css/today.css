@@ -1,0 +1,96 @@
+.todaysForecast {
+  background-color: rgba(17, 27, 41, 0.836);
+  border-radius: 20px;
+  padding: 15px;
+  margin: 10px 0px 0px 0px;
+  color: #b4b2b2;
+  width: 60vw;
+  overflow: hidden;
+}
+
+.todaysForecast .title {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  letter-spacing: 1.5px;
+}
+
+.todaysForecast .forecasts {
+  padding: 10px;
+  display: flex;
+  gap: 5px;
+}
+
+.forecasts .item {
+  padding: 5px 15px;
+  border-right: 1px solid rgb(22, 29, 44);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.item h4 {
+  font-size: 0.8em;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.item .icon {
+  height: 60px;
+  width: 60px;
+  border-radius: 50px;
+}
+
+.item .temp {
+  font-size: 1.5em;
+  color: rgba(216, 216, 216, 0.829);
+  font-weight: 600;
+}
+
+@media screen and (max-width: 600px) {
+  .todaysForecast {
+    border-radius: 20px;
+    padding: 10px 15px;
+    width: 80vw;
+    height: max-content;
+  }
+
+  .todaysForecast .title {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+  }
+
+  .todaysForecast .forecasts {
+    width: 100%;
+    padding: 5px 0px;
+    gap: 2px;
+    flex-wrap: wrap;
+  }
+
+  .forecasts .item {
+    padding: 5px 8px;
+    border-right: 1px solid rgb(22, 29, 44);
+    gap: 5px;
+  }
+
+  .item h4 {
+    font-size: 0.7em;
+    font-weight: 400;
+  }
+
+  .item .icon {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+  }
+  
+  .item .temp {
+    font-size: 1.5em;
+    color: rgba(255, 255, 255, 0.945);
+    font-weight: 400;
+  }
+}

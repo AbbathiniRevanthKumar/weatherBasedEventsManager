@@ -1,0 +1,161 @@
+.section {
+  display: flex;
+  gap: 10px;
+}
+
+.addevents {
+  background-color: rgba(17, 27, 41, 0.836);
+  padding: 15px 15px;
+  border-radius: 20px;
+  color: #b4b2b2;
+  width: 30vw;
+}
+
+.addevents .title {
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: 400;
+  color: white;
+  letter-spacing: 2px;
+  margin: 10px 0px;
+}
+
+.addevents h4 {
+  margin: 10px 0px;
+  font-weight: 700;
+  font-family: "Quicksand", sans-serif;
+}
+
+.addevents form {
+  background-color: rgb(10, 13, 19);
+  padding: 20px 15px;
+  border-radius: 20px;
+  font-family: "Quicksand", sans-serif;
+  margin: 10px 0px;
+}
+
+form label {
+  font-family: "Quicksand", sans-serif;
+  margin-right: 10px;
+}
+
+form input {
+  width: 15vw;
+  outline: none;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-family: "Quicksand", sans-serif;
+  color: black;
+  font-weight: 700;
+}
+
+form select {
+  outline: none;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-family: "Quicksand", sans-serif;
+  color: black;
+  font-weight: 700;
+}
+
+select option {
+  border: none;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  background-color: rgb(10, 13, 19);
+  color: white;
+}
+
+form button {
+  outline: none;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-family: "Quicksand", sans-serif;
+  color: black;
+  font-weight: 700;
+  cursor: pointer;
+  background-color: #b4b2b2b0;
+}
+form button:hover {
+  background-color: rgb(255, 255, 255);
+}
+
+.clear-btn {
+  outline: none;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-family: "Quicksand", sans-serif;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  cursor: pointer;
+  background-color: #ff4343b0;
+  visibility: visible;
+}
+
+.clear-btn:hover {
+  background-color: red;
+}
+
+.alert-danger {
+  background-color: rgb(255, 99, 99);
+  border-radius: 20px;
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+}
+
+.alert-green {
+  background-color: rgb(107, 250, 94);
+  border-radius: 20px;
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .section {
+    flex-direction: column;
+  }
+
+  .addevents {
+    width: 80vw;
+  }
+
+  .addevents .title {
+    font-size: 1.7em;
+  }
+
+  form input {
+    width: 30vw;
+  }
+
+  form select {
+    outline: none;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-family: "Quicksand", sans-serif;
+    color: black;
+    font-weight: 700;
+  }
+
+  .clear-btn {
+    font-size: 1.5em;
+  }
+
+  .alert-danger {
+    font-weight: 600;
+  }
+
+  .alert-green {
+    font-weight: 600;
+  }
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eventsDetails</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/eventsDetails.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0e560dff6b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/eventContainer.css">
+    <link rel="stylesheet" href="../css/currentEventsWeather.css">
+</head>
+
+<body>
+    <div class="section">
+        <div class="addevents">
+            <div class="alert"></div>
+            <div class="title">Add Events</div>
+            <h4>Create an Event</h4>
+            <form id="eventForm">
+                <label for="eventName">Event Name :</label>
+                <input type="text" id="eventName" name="eventName" required><br><br>
+                <label for="eventDate">Event Date :</label>
+                <select id="eventDate" name="eventDate">
+                </select><br><br>
+
+                <label for="eventTime">Event Time :</label>
+                <select id="eventTime" name="eventTime">
+                    <option value="00:00 AM">00:00 AM</option>
+                    <option value="3:00 AM">3:00 AM</option>
+                    <option value="6:00 AM">6:00 AM</option>
+                    <option value="9:00 AM">9:00 AM</option>
+                    <option value="12:00 PM">12:00 PM</option>
+                    <option value="3:00 PM">3:00 PM</option>
+                    <option value="6:00 PM">6:00 PM</option>
+                    <option value="9:00 PM">9:00 PM</option>
+                </select><br><br>
+
+                <label for="weatherPreference">Weather Preference :</label>
+                <select id="weatherPreference" name="weatherPreference">
+                    <option value="sunny">Sunny</option>
+                    <option value="rainy">Rainy</option>
+                    <option value="cloudy">Cloudy</option>
+                    <option value="windy">Windy</option>
+                </select><br><br>
+
+                <button type="submit" class="submit-btn">Create Event</button>
+            </form>
+            <div class="currentWeather">
+                <div class="details">
+                    <div class="name"></div>
+                    <div class="currenttemp"></div>
+                </div>
+                <img src="" class="icon" id="mainicon">
+            </div>
+            <div class="back"><i class="fa-solid fa-arrow-left"></i>Home</div>
+        </div>
+        <div class="eventcontainer emptyContainer">
+            <div class="title">Your Events</div>
+            <div class="desc">Events Are Empty!Add Events</div>
+            <div class="eventitems" id="eventItems">
+            </div>
+            <button class="clear-btn hide" type="button">clear all items</button>
+        </div>
+    </div>
+    <script src="../javascript/eventCurrentWeather.js" type="module"></script>
+    <script src="../javascript/eventsCRUD.js" type="module"></script>
+    <script type="module" src="../javascript/formOptions.js"></script>
+</body>
+
+</html>
