@@ -58,5 +58,6 @@ function setUpItems() {
 
 const more = document.querySelector(".eventsPage");
 more.onclick = () => {
-  window.location.href = "../Html/eventPage.html";
+  window.location.href = "./eventPage.html";
 };
+
