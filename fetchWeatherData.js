@@ -24,13 +24,13 @@ max.innerHTML = parseInt(data.main.temp_max-273.15)+"°";
 pressure.innerHTML = data.main.pressure+" hPa";
 speed.innerHTML = data.wind.speed+" Km/h";
 humidity.innerHTML = data.main.humidity+"%";
-rise.innerHTML = getTime(data.sys.sunrise)+" AM";
-set.innerHTML = getTime(data.sys.sunset)+" PM";
+rise.innerHTML = getTime(data.sys.sunrise,data.timezone)+" AM";
+set.innerHTML = getTime(data.sys.sunset,data.timezone)+" PM";
 weather.innerHTML = data.weather[0].description;
 
-function getTime(timestamp) {
-  var date = new Date(timestamp);
-  var hours = (date.getHours()-1)%12;
+function getTime(timestamp,int) {
+  var date = new Date(timestamp*1000);
+  var hours = (date.getHours())%12;
   var min = date.getMinutes();
 
   return hours+":"+min;
@@ -38,4 +38,4 @@ function getTime(timestamp) {
 
 const icon = document.getElementById("mainicon");
 icon.src = icons[data.weather[0].id].img;
-
+console.log(data.weather[0].id);
