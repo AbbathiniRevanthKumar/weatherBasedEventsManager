@@ -11,7 +11,7 @@ await getGeoLocation()
   });
 
 console.log(latitude, longitude);
-const url = `https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&cnt=8&appid=8eb104a215780c50c17b3abed6534689`;
+const url = `https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&cnt=8&appid=8eb104a215780c50c17b3abed6534689&lang=en`;
 
 async function fetching() {
   try {
