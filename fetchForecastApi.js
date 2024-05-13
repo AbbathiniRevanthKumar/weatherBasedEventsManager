@@ -29,7 +29,6 @@ async function fetching() {
   }
 }
 
-
 export function fetchForecastData() {
   return new Promise((resolve, reject) => {
     fetching()
@@ -41,5 +40,3 @@ export function fetchForecastData() {
       });
   });
 }
-
-
